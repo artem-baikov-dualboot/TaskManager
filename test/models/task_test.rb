@@ -5,4 +5,10 @@ class TaskTest < ActiveSupport::TestCase
     task = create(:task)
     assert task.persisted?
   end
+
+  test 'task develop' do
+    task = create(:task)
+    assert task.develop
+    assert task.state == 'in_development'
+  end
 end
