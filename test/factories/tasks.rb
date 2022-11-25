@@ -3,7 +3,7 @@ FactoryBot.define do
     name { 'MyString' }
     description { 'MyText' }
     author factory: :manager
-    assignee_id factory: :developer
+    assignee factory: :developer
     state { 'MyString' }
     expired_at { '2022-11-24' }
   end
